@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -19,13 +20,22 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur-xl">
-      <nav className="mx-auto w-full max-w-[1400px] px-6 py-5 md:px-12 lg:py-6">
+      {/* 🔽 Changed padding: removed left padding (pl-0) */}
+      <nav className="mx-auto w-full max-w-[1400px] pl-0 pr-6 py-5 md:pl-0 md:pr-12 lg:py-6">
         <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="text-xl font-bold tracking-tight text-white transition-opacity duration-300 hover:opacity-70 lg:text-2xl"
+            className="relative block h-8 w-40 transition-opacity duration-300 hover:opacity-70 md:h-10 md:w-48"
           >
-            LumiveX Neura Labs
+           <Image
+  src="/logo.jpeg"
+  alt="LumiveX Neura Labs Logo"
+  
+  className="object-contain object-left"
+  width={45}   
+    height={8} 
+  priority
+/>
           </Link>
 
           {/* Hamburger Menu Button */}

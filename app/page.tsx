@@ -3,6 +3,7 @@ import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -95,9 +96,11 @@ export default function Home() {
                 Partner with Aaruchudar and discover how Nurotech can transform your
                 business with intelligent, scalable products.
               </p>
-              <button className="mt-8 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-8 py-3 font-semibold text-white shadow-lg transition-all hover:shadow-xl hover:scale-105">
-                Get in Touch
-              </button>
+              <Link href="/contact">
+                <button className="mt-8 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-8 py-3 font-semibold text-white shadow-lg transition-all hover:shadow-xl hover:scale-105">
+                  Get in Touch
+                </button>
+              </Link>
             </div>
           </div>
         </section>

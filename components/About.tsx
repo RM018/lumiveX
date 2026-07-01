@@ -13,13 +13,13 @@ export default function About() {
         {/* Refined Eyebrow Badge for Light Background */}
         <div className="mb-8 inline-flex items-center rounded-full border border-neutral-200 bg-neutral-50 px-4 py-1.5 text-sm font-semibold tracking-wide text-neutral-600 shadow-sm">
           <span className="mr-2 flex h-2 w-2 rounded-full bg-blue-500 animate-pulse"></span>
-          ABOUT NUROTECH
+          ABOUT LumiveX
         </div>
 
         {/* High-Contrast Typography */}
         <h2 className="text-4xl font-extrabold tracking-tight text-neutral-900 md:text-5xl lg:text-7xl">
           <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-            AI-Powered.
+            Research Specific
           </span>
           <br />
           Future-Ready.
@@ -27,7 +27,7 @@ export default function About() {
 
         {/* Sophisticated Gray Text */}
         <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-neutral-500 md:text-2xl lg:mt-10">
-          Nurotech is <span className="font-semibold text-neutral-900">Aaruchudar&apos;s</span> flagship research initiative focused on delivering intelligent, scalable, and impactful products across industries.
+         <b>LumiveX Neura Labs</b> is flagship research initiative focused on delivering intelligent, scalable, and impactful products across industries.
         </p>
 
         {/* Clean Minimalist Divider */}
