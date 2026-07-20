@@ -19,7 +19,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur-xl">
+    <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-white/80 backdrop-blur-xl">
       {/* 🔽 Changed padding: removed left padding (pl-0) */}
       <nav className="mx-auto w-full max-w-[1400px] pl-0 pr-6 py-5 md:pl-0 md:pr-12 lg:py-6">
         <div className="flex items-center justify-between">
@@ -28,12 +28,12 @@ export default function Navbar() {
             className="relative block h-8 w-40 transition-opacity duration-300 hover:opacity-70 md:h-10 md:w-48"
           >
            <Image
-  src="/logo.jpeg"
+  src="/logo1.png"
   alt="LumiveX Neura Labs Logo"
   
   className="object-contain object-left"
-  width={45}   
-    height={8} 
+  width={55}   
+    height={26} 
   priority
 />
           </Link>
